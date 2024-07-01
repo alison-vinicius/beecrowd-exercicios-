@@ -12,9 +12,10 @@ int main(){
     int i = 7;
 
     while(i >= 0){
-        if(soma <= n){
+        if(fatorial[i] <= n){
             soma += fatorial[i]; 
             cont += 1;
+            n -= fatorial[i];
         }else{
             i--; 
         }
